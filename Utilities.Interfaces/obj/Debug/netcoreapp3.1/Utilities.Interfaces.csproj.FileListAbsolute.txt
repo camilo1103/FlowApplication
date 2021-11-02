@@ -1,0 +1,10 @@
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\bin\Debug\netcoreapp3.1\Utilities.Interfaces.deps.json
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\bin\Debug\netcoreapp3.1\Utilities.Interfaces.dll
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\bin\Debug\netcoreapp3.1\Utilities.Interfaces.pdb
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.dll
+C:\Users\Administrador\source\repos\FlowApplication\Utilities.Interfaces\obj\Debug\netcoreapp3.1\Utilities.Interfaces.pdb

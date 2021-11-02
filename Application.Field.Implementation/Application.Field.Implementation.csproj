@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Field.Interfaces\Application.Field.Interfaces.csproj" />
+    <ProjectReference Include="..\Domain.Field\Domain.Field.csproj" />
+    <ProjectReference Include="..\Utilities.Interfaces\Utilities.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

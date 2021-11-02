@@ -1,0 +1,58 @@
+services:
+  fieldscatalog:
+    build:
+      context: C:\Users\Administrador\source\repos\FlowApplication
+      dockerfile: FieldsCatalog/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FieldsCatalog
+      target: base
+    container_name: fieldscatalog-service
+    depends_on:
+      sqldata:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+      SQL_SERVER_CONNECTION: Server=sqldata; Database=OrderDb; User=sa; Password=Pass@word;
+    image: fieldscatalog:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath
+        /root/.nuget/fallbackpackages2  "/app/bin/Debug/netcoreapp3.1/FieldsCatalog.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5302
+      target: 80
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\Administrador\source\repos\FlowApplication\FieldsCatalog:/app:rw
+    - C:\Users\Administrador\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Program Files (x86)\Microsoft\Xamarin\NuGet:/root/.nuget/fallbackpackages2:ro
+    - C:\Users\Administrador\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\Administrador\source\repos\FlowApplication:/src:rw
+  sqldata:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Pass@word
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+    - published: 5301
+      target: 1433
+    volumes:
+    - data:/var/opt/mssql/data:rw
+version: '3.4'
+volumes:
+  data: {}

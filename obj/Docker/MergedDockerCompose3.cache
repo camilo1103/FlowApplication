@@ -1,0 +1,20 @@
+services:
+  fieldscatalog:
+    build:
+      context: C:\Users\Administrador\source\repos\FlowApplication
+      dockerfile: FieldsCatalog/Dockerfile
+    container_name: fieldscatalog-service
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      SQL_SERVER_CONNECTION: Server=sqldata; Database=OrderDb; User=sa; Password=Pass@word;
+    image: fieldscatalog:linux-latest
+    ports:
+    - published: 5301
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

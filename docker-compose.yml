@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2017-latest 
+    environment:
+        SA_PASSWORD: "Pass@word"
+        ACCEPT_EULA: "Y"
+    ports:
+        - "5301:1433"
+    volumes:
+        - data:/var/opt/mssql/data
+
+  fieldscatalog:
+    image: ${DOCKER_REGISTRY-}fieldscatalog:${PLATFORM:-linux}-${TAG:-latest}
+    container_name: fieldscatalog-service
+    environment:
+        SQL_SERVER_CONNECTION:  "Server=sqldata; Database=FieldscatalogDb; User=sa; Password=Pass@word;"
+    build:
+      context: .
+      dockerfile: FieldsCatalog/Dockerfile
+    ports:
+        - "5302:80"
+    depends_on:
+    - sqldata
+
+volumes:
+    data:
