@@ -14,7 +14,7 @@ namespace Infrastructure.Fields.Implementation.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TypeName = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Type = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeleteDate = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -22,6 +22,23 @@ namespace Infrastructure.Fields.Implementation.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TypeField", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Validation",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ValidationEnum = table.Column<int>(type: "int", nullable: false),
+                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeleteDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Validation", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -48,33 +65,37 @@ namespace Infrastructure.Fields.Implementation.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Validation",
+                name: "ValidationInField",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ValidationEnum = table.Column<int>(type: "int", nullable: false),
-                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TypeFieldId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    TypeFieldId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ValidationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeleteDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Validation", x => x.Id);
+                    table.PrimaryKey("PK_ValidationInField", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Validation_TypeField_TypeFieldId",
+                        name: "FK_ValidationInField_TypeField_TypeFieldId",
                         column: x => x.TypeFieldId,
                         principalTable: "TypeField",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ValidationInField_Validation_ValidationId",
+                        column: x => x.ValidationId,
+                        principalTable: "Validation",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
                 table: "Validation",
-                columns: new[] { "Id", "CreateDate", "DeleteDate", "Description", "IsDelete", "TypeFieldId", "ValidationEnum", "Value" },
-                values: new object[] { new Guid("1bb3afd5-701f-4fa7-a261-e4bf2c33c876"), new DateTime(2021, 11, 2, 2, 14, 54, 799, DateTimeKind.Local).AddTicks(8796), null, "prueba", false, null, 0, "OK" });
+                columns: new[] { "Id", "CreateDate", "DeleteDate", "Description", "IsDelete", "ValidationEnum", "Value" },
+                values: new object[] { new Guid("8389d2d7-988c-457c-8959-3a1c53d304d9"), new DateTime(2021, 11, 4, 15, 15, 59, 462, DateTimeKind.Local).AddTicks(3734), null, "prueba", false, 0, "OK" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Field_Key",
@@ -95,9 +116,14 @@ namespace Infrastructure.Fields.Implementation.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Validation_TypeFieldId",
-                table: "Validation",
+                name: "IX_ValidationInField_TypeFieldId",
+                table: "ValidationInField",
                 column: "TypeFieldId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ValidationInField_ValidationId",
+                table: "ValidationInField",
+                column: "ValidationId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -106,10 +132,13 @@ namespace Infrastructure.Fields.Implementation.Migrations
                 name: "Field");
 
             migrationBuilder.DropTable(
-                name: "Validation");
+                name: "ValidationInField");
 
             migrationBuilder.DropTable(
                 name: "TypeField");
+
+            migrationBuilder.DropTable(
+                name: "Validation");
         }
     }
 }

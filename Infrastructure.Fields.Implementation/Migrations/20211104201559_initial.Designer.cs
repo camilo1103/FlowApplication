@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Fields.Implementation.Migrations
 {
     [DbContext(typeof(FieldContext))]
-    [Migration("20211102071455_initial")]
+    [Migration("20211104201559_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,7 +69,6 @@ namespace Infrastructure.Fields.Implementation.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDelete")
@@ -108,9 +107,6 @@ namespace Infrastructure.Fields.Implementation.Migrations
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("TypeFieldId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("ValidationEnum")
                         .HasColumnType("int");
 
@@ -119,20 +115,48 @@ namespace Infrastructure.Fields.Implementation.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TypeFieldId");
-
                     b.ToTable("Validation");
 
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1bb3afd5-701f-4fa7-a261-e4bf2c33c876"),
-                            CreateDate = new DateTime(2021, 11, 2, 2, 14, 54, 799, DateTimeKind.Local).AddTicks(8796),
+                            Id = new Guid("8389d2d7-988c-457c-8959-3a1c53d304d9"),
+                            CreateDate = new DateTime(2021, 11, 4, 15, 15, 59, 462, DateTimeKind.Local).AddTicks(3734),
                             Description = "prueba",
                             IsDelete = false,
                             ValidationEnum = 0,
                             Value = "OK"
                         });
+                });
+
+            modelBuilder.Entity("Domain.Field.ValidationInField", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("TypeFieldId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ValidationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TypeFieldId");
+
+                    b.HasIndex("ValidationId");
+
+                    b.ToTable("ValidationInField");
                 });
 
             modelBuilder.Entity("Domain.Field.Field", b =>
@@ -144,11 +168,23 @@ namespace Infrastructure.Fields.Implementation.Migrations
                     b.Navigation("TypeField");
                 });
 
-            modelBuilder.Entity("Domain.Field.Validation", b =>
+            modelBuilder.Entity("Domain.Field.ValidationInField", b =>
                 {
-                    b.HasOne("Domain.Field.TypeField", null)
+                    b.HasOne("Domain.Field.TypeField", "TypeField")
                         .WithMany("Validations")
-                        .HasForeignKey("TypeFieldId");
+                        .HasForeignKey("TypeFieldId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Field.Validation", "Validation")
+                        .WithMany()
+                        .HasForeignKey("ValidationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TypeField");
+
+                    b.Navigation("Validation");
                 });
 
             modelBuilder.Entity("Domain.Field.TypeField", b =>

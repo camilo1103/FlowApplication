@@ -18,6 +18,7 @@ namespace Infrastructure.Fields.Implementation.Context
 
         public virtual DbSet<Validation> Validation { get; set; }
         public virtual DbSet<TypeField> TypeField { get; set; }
+        public virtual DbSet<ValidationInField> ValidationInField { get; set; }
         public virtual DbSet<Field> Field { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
