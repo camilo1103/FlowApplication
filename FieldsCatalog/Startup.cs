@@ -68,6 +68,7 @@ namespace FieldsCatalog
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

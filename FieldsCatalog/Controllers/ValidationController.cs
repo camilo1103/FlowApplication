@@ -1,4 +1,5 @@
 ﻿using Application.Field.Interfaces.Validation;
+using Domain.Configuration.Field.Input;
 using Domain.Configuration.Field.Output;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -29,27 +30,30 @@ namespace FieldsCatalog.Controllers
 
         // GET api/<ValidationController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ValidationOutput> Get(Guid id)
         {
-            return "value";
+            return await _validationApplication.GetById(id);
         }
 
         // POST api/<ValidationController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<Domain.Field.Validation> Post([FromBody] ValidationInputCreate input)
         {
+            return await _validationApplication.Create(input);
         }
 
         // PUT api/<ValidationController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public async Task<Domain.Field.Validation> Put([FromBody] ValidationInputUpdate input)
         {
+            return await _validationApplication.Update(input);
         }
 
         // DELETE api/<ValidationController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<Domain.Field.Validation> Delete(Guid id)
         {
+            return await _validationApplication.Delete(id);
         }
     }
 }

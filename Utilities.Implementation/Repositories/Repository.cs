@@ -103,7 +103,7 @@ namespace Utilities.Implementation.Repositories
                 var data = await query.ToListAsync();
                 data.ForEach(single =>
                 {
-                    ((ISoftDelete)single).IsDeleted = true;
+                    ((ISoftDelete)single).IsDelete = true;
                     if (typeof(IFullAuditedEntity).IsAssignableFrom(typeof(TEntity)))
                     {
                         ((IFullAuditedEntity)single).DeleteDate = DateTime.Now;
@@ -127,7 +127,7 @@ namespace Utilities.Implementation.Repositories
         {
             if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
             {
-                ((ISoftDelete)entity).IsDeleted = true;
+                ((ISoftDelete)entity).IsDelete = true;
                 if (typeof(IFullAuditedEntity).IsAssignableFrom(typeof(TEntity)))
                 {
                     ((IFullAuditedEntity)entity).DeleteDate = DateTime.Now;
@@ -144,7 +144,7 @@ namespace Utilities.Implementation.Repositories
 
         public virtual IQueryable<TEntity> GetAll(bool withoutDefaultFilters = false)
         {
-            IQueryable<TEntity> query = _dbSet;
+            IQueryable<TEntity> query = _dbSet.AsNoTracking();
 
             if (withoutDefaultFilters)
             {               
@@ -158,7 +158,7 @@ namespace Utilities.Implementation.Repositories
         public virtual DbSet<TEntity> Get() => _dbSet;
 
         
-        public IQueryable<TEntity> Queryable() => _dbSet;
+        public IQueryable<TEntity> Queryable() => _dbSet.AsNoTracking();
 
         public IRepository<T> GetRepository<T>() where T : class => _unitOfWork.Repository<T>();
 
@@ -268,7 +268,7 @@ namespace Utilities.Implementation.Repositories
         {
             if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
             {
-                query = query.Where(x => ((ISoftDelete)x).IsDeleted == false);
+                query = query.Where(x => ((ISoftDelete)x).IsDelete == false);
             }
            
             return query;

@@ -10,3 +10,16 @@ C:\Users\Administrador\source\repos\FlowApplication\Utilities.Implementation\obj
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.dll
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.pdb
+C:\Backup\FlowApplication\Utilities.Implementation\bin\Debug\netcoreapp3.1\Utilities.Implementation.deps.json
+C:\Backup\FlowApplication\Utilities.Implementation\bin\Debug\netcoreapp3.1\Utilities.Implementation.dll
+C:\Backup\FlowApplication\Utilities.Implementation\bin\Debug\netcoreapp3.1\Utilities.Implementation.pdb
+C:\Backup\FlowApplication\Utilities.Implementation\bin\Debug\netcoreapp3.1\Utilities.Interfaces.dll
+C:\Backup\FlowApplication\Utilities.Implementation\bin\Debug\netcoreapp3.1\Utilities.Interfaces.pdb
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.AssemblyReference.cache
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.AssemblyInfoInputs.cache
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.AssemblyInfo.cs
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.CoreCompileInputs.cache
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.dll
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.pdb
+C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.CopyComplete

@@ -12,3 +12,17 @@ C:\Users\Administrador\source\repos\FlowApplication\Utilities.Configuration\obj\
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.dll
 C:\Users\Administrador\source\repos\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.pdb
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Configuration.deps.json
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Configuration.dll
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Configuration.pdb
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Implementation.dll
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Interfaces.dll
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Implementation.pdb
+C:\Backup\FlowApplication\Utilities.Configuration\bin\Debug\netcoreapp3.1\Utilities.Interfaces.pdb
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.csproj.AssemblyReference.cache
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.AssemblyInfoInputs.cache
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.AssemblyInfo.cs
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.csproj.CoreCompileInputs.cache
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.dll
+C:\Backup\FlowApplication\Utilities.Configuration\obj\Debug\netcoreapp3.1\Utilities.Configuration.pdb

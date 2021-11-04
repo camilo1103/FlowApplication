@@ -6,6 +6,6 @@ namespace Utilities.Interfaces.Repositories
 {
     public interface ISoftDelete
     {
-        public bool IsDeleted { get; set; }
+        public bool IsDelete { get; set; }
     }
 }

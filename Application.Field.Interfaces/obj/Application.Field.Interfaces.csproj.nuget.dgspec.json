@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj": {}
+    "C:\\Backup\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj": {
+    "C:\\Backup\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj",
         "projectName": "Application.Field.Interfaces",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Application.Field.Interfaces\\Application.Field.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Application.Field.Interfaces\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Application.Field.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj"
+              "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj": {
+    "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj",
         "projectName": "Domain.Configuration.Field",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\Domain.Configuration.Field.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Configuration.Field\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Domain.Configuration.Field\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -98,8 +98,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\Domain.Field.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\Domain.Field.csproj"
+              "C:\\Backup\\FlowApplication\\Domain.Field\\Domain.Field.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Domain.Field\\Domain.Field.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\Domain.Field.csproj": {
+    "C:\\Backup\\FlowApplication\\Domain.Field\\Domain.Field.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\Domain.Field.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Domain.Field\\Domain.Field.csproj",
         "projectName": "Domain.Field",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\Domain.Field.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Domain.Field\\Domain.Field.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Domain.Field\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Domain.Field\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -168,8 +168,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj"
+              "C:\\Backup\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj"
               }
             }
           }
@@ -212,14 +212,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj": {
+    "C:\\Backup\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj",
         "projectName": "Utilities.Configuration",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Configuration\\Utilities.Configuration.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Configuration\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Utilities.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -242,11 +242,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj"
+              "C:\\Backup\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj"
               },
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj"
+              "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj"
               }
             }
           }
@@ -261,6 +261,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -268,6 +272,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.2, )"
             }
           },
           "imports": [
@@ -289,14 +297,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj": {
+    "C:\\Backup\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj",
         "projectName": "Utilities.Implementation",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Implementation\\Utilities.Implementation.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Implementation\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Utilities.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -319,8 +327,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj"
+              "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
+                "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj"
               }
             }
           }
@@ -371,14 +379,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
+    "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
         "projectName": "Utilities.Interfaces",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -2,17 +2,6 @@
   "profiles": {
     "Docker Compose": {
       "commandName": "DockerCompose",
-      "composeLaunchServiceName": "fieldscatalog",
-      "serviceActions": {
-        "fieldscatalog": "StartDebugging",
-        "sqldata": "StartWithoutDebugging"
-      },
-      "composeLaunchAction": "LaunchBrowser",
-      "commandVersion": "1.0",
-      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/weatherforecast"
-    },
-    "sqldata": {
-      "commandName": "DockerCompose",
       "serviceActions": {
         "fieldscatalog": "StartDebugging",
         "sqldata": "StartWithoutDebugging"

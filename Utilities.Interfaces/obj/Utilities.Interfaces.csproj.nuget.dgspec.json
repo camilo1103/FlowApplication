@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {}
+    "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
+    "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
+        "projectUniqueName": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
         "projectName": "Utilities.Interfaces",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
+        "projectPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\Utilities.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\FlowApplication\\Utilities.Interfaces\\obj\\",
+        "outputPath": "C:\\Backup\\FlowApplication\\Utilities.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
