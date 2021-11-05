@@ -40,3 +40,4 @@ C:\Backup\FlowApplication\Infrastructure.Fields.Implementation\obj\Debug\netcore
 C:\Backup\FlowApplication\Infrastructure.Fields.Implementation\obj\Debug\netcoreapp3.1\Infrastructure.Fields.Implementation.dll
 C:\Backup\FlowApplication\Infrastructure.Fields.Implementation\obj\Debug\netcoreapp3.1\Infrastructure.Fields.Implementation.pdb
 C:\Backup\FlowApplication\Infrastructure.Fields.Implementation\obj\Debug\netcoreapp3.1\Infrastructure.Fields.Implementation.genruntimeconfig.cache
+C:\Backup\FlowApplication\Infrastructure.Fields.Implementation\obj\Debug\netcoreapp3.1\Infrastructure.Fields.Implementation.csproj.CopyComplete
