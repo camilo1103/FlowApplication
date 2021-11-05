@@ -17,9 +17,9 @@ namespace Domain.Field
         public TypeFieldEnum Type { get; set; }
 
         [Required]
-        public List<Validation> Validations { get; set; }
+        public ICollection<ValidationInField> Validations { get; set; }
 
-        [Required]
         public string Description { get; set; }
+                
     }   
 }

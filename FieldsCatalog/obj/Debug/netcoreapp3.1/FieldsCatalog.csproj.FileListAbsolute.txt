@@ -158,3 +158,4 @@ C:\Backup\FlowApplication\FieldsCatalog\obj\Debug\netcoreapp3.1\FieldsCatalog.dl
 C:\Backup\FlowApplication\FieldsCatalog\obj\Debug\netcoreapp3.1\FieldsCatalog.pdb
 C:\Backup\FlowApplication\FieldsCatalog\obj\Debug\netcoreapp3.1\FieldsCatalog.genruntimeconfig.cache
 C:\Backup\FlowApplication\FieldsCatalog\bin\Debug\netcoreapp3.1\Polly.dll
+C:\Backup\FlowApplication\FieldsCatalog\obj\Debug\netcoreapp3.1\FieldsCatalog.csproj.CopyComplete

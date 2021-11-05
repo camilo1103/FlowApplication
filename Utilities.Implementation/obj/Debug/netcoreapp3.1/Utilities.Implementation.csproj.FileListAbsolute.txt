@@ -22,4 +22,3 @@ C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utili
 C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.CoreCompileInputs.cache
 C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.dll
 C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.pdb
-C:\Backup\FlowApplication\Utilities.Implementation\obj\Debug\netcoreapp3.1\Utilities.Implementation.csproj.CopyComplete

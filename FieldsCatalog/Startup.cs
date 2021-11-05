@@ -1,4 +1,6 @@
+using Application.Field.Implementation.TypeField;
 using Application.Field.Implementation.Validation;
+using Application.Field.Interfaces.TypeFIeld;
 using Application.Field.Interfaces.Validation;
 using AutoMapper;
 using Infrastructure.Fields.Implementation.Context;
@@ -39,6 +41,7 @@ namespace FieldsCatalog
             services.UseRepository(typeof(FieldContext));
             //add aplication injections
             services.AddScoped<IValidationApplication, ValidationApplication>();
+            services.AddScoped<ITypeFieldApplication, TypeFieldApplication>();
             services.AddControllers();
             MapperConfiguration mappingConfig = new MapperConfiguration(config =>
             {

@@ -28,6 +28,5 @@ C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.Gene
 C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.AssemblyInfoInputs.cache
 C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.AssemblyInfo.cs
 C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.csproj.CoreCompileInputs.cache
-C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.csproj.CopyComplete
 C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.dll
 C:\Backup\FlowApplication\Domain.Field\obj\Debug\netcoreapp3.1\Domain.Field.pdb

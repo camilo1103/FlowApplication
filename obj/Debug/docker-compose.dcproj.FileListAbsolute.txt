@@ -89,3 +89,4 @@ C:\Backup\FlowApplication\bin\Debug\Utilities.Interfaces.pdb
 C:\Backup\FlowApplication\bin\Debug\Utilities.Implementation.pdb
 C:\Backup\FlowApplication\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Backup\FlowApplication\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Backup\FlowApplication\obj\Debug\docker-compose.dcproj.CopyComplete
